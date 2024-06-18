@@ -308,7 +308,7 @@ countryRiskBackend:
     # -- String value that represents the client ID for pool app
     poolClientId: ""  #
     # -- String value that represents the api key to Use Edc endpoints
-    edcApiKey: ""  #
+    edcApiKey: "dasdfgasd"  #
 
   configmap:
     # Specifies whether a configmap should be created
@@ -344,7 +344,7 @@ postgres:
   auth:
     database: vas
     username: vas
-    password: ""
+    password: "sdaasd"
 
 
 pgadmin4:
@@ -353,4 +353,4 @@ pgadmin4:
   env:
     # -- Email used on the Env environment
     email: ""
-    password: ""
+    password: "dfhsdf"
