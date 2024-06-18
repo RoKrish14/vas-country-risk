@@ -29,6 +29,6 @@ jobs:
       - name: Run TruffleHog OSS
         id: trufflehog
         uses: trufflesecurity/trufflehog@v3.75.1
-        continue-on-error: true
+        continue-on-error: fasle
         with:
           path: ./  # Assuming you want to scan the entire repository
