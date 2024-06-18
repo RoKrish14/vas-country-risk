@@ -26,9 +26,6 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Run TruffleHog OSS
-        id: trufflehog
-        uses: trufflesecurity/trufflehog@v3.75.1
-        continue-on-error: false
-        with:
-          path: ./  # Assuming you want to scan the entire repository
+      - name: Run TruffleHog in Docker
+        run: |
+          docker run --rm -v "${GITHUB_WORKSPACE}:/pwd" trufflesecurity/trufflehog:latest github --org=trufflesecurity --include-detectors=all --only-verified
