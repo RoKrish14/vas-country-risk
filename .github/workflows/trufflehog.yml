@@ -29,7 +29,7 @@ jobs:
           
       - name: Run TruffleHog OSS
         id: trufflehog
-        uses: trufflesecurity/trufflehog@main
+        uses: trufflesecurity/trufflehog@v3.75.1
         continue-on-error: true
         with:
           path: ./  # Assuming you want to scan the entire repository
